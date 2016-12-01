@@ -1,0 +1,32 @@
+{
+  "name": "arm-open.github.io",
+  "homepage": "https://github.com/ARM-open/arm-open.github.io",
+  "authors": [
+    "David Awad <davidawad64@gmail.com>"
+  ],
+  "description": "arm public facing website",
+  "main": "server.py",
+  "keywords": [
+    "arm",
+    "charity",
+    "open",
+    "source",
+    "community",
+    "building",
+    "outcome",
+    "and",
+    "community",
+    "driven"
+  ],
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
