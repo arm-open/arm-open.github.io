@@ -1,6 +1,6 @@
 /* -------------------------------- 
 
-Primary style
+Primary styles
 
 -------------------------------- */
 *, *::after, *::before {
@@ -19,12 +19,45 @@ body {
 }
 
 a {
-  color: #544173;
+  color: #00a850;
   text-decoration: none;
+  font-family: "Source Sans Pro", Georgia;
+  font-size: 12pt;
 }
 
+p {
+  font-family: "Source Sans Pro", Georgia;
+  font-size: 12pt;
+}
+
+h1 {
+  font-family: "Signika", serif;
+  font-weight: 3em;
+}
+
+h2 {
+  font-family: "Signika", serif;
+  font-weight: 2.35em;
+}
+
+h3 {
+  font-family: "Overlook", serif;
+  font-weight: 2em;
+}
+
+h4 {
+  font-family: "Signika", serif;
+  font-weight: 1em;
+}
+
+/*
 h1, h2 {
   font-family: "Vollkorn", serif;
+}
+*/
+img {
+    max-width:100%;
+    max-height:100%;
 }
 
 /* -------------------------------- 
@@ -179,17 +212,21 @@ Main content
   display: table-cell;
   vertical-align: middle;
 }
+
+/* Styles for the windows
+ */
 .cd-item:nth-of-type(1) {
-  background-color: #363558;
+  background-color: #00a850;
+  /* background-color: #363558; */
 }
 .cd-item:nth-of-type(2) {
-  background-color: #544173;
+  background-color: #7651a1;
 }
 .cd-item:nth-of-type(3) {
   background-color: #dadcdc;
 }
 .cd-item:nth-of-type(4) {
-  background-color: #65d29b;
+  background-color: #363558;
 }
 .cd-item h2 {
   font-size: 2.2rem;
