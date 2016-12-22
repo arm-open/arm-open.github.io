@@ -60,6 +60,11 @@ img {
     max-height:100%;
 }
 
+#item-4 {
+    background-image: url("../img/water.jpg");
+    background-size: 100% 100%;
+}
+
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
