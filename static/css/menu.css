@@ -353,7 +353,7 @@ display: none;
   }
   .cd-main-nav li ul {
     height: 80px;
-    background-color: #00a850;
+    background-color: #ea6b25;
     /* padding left = logo size + logo left position*/
     padding: 0 5% 0 calc(5% + 124px);
     -webkit-transform: translateY(-80px);
