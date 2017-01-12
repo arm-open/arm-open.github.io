@@ -78,6 +78,7 @@ img {
 /* FIXME tukushi font doesn't work */
 .logo-type {
     color: #ffffff;
+    text-align: center !important;
     font-family: 'Tukushi', "Source Sans Pro";
 }
 
