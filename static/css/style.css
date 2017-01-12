@@ -3,6 +3,9 @@
   src: url('../fonts/AppleTsukuARdGothic-Regular-AlphaNum.ttf') format("truetype");;
 }
 
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+
 /* -------------------------------- 
 Primary styles
 -------------------------------- */
@@ -75,7 +78,7 @@ img {
 /* FIXME tukushi font doesn't work */
 .logo-type {
     color: #ffffff;
-    /* font-family: 'Tukushi'; */
+    font-family: 'Tukushi', "Source Sans Pro";
 }
 
 /* -------------------------------- 
