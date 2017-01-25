@@ -1,8 +1,16 @@
 language: python
 
+# disable the default submodule logic
+git:
+  submodules: false
+
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y enchant
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+
+# replace the SSH URL with the public URL
 
 python:
   - "2.6"
@@ -21,4 +29,4 @@ python:
 install: "pip install -r requirements.txt" # command to run tests
 
 # defaults to current directory
-script: python spelltest.py
+script: python test/spellcheck/spelltest.py
