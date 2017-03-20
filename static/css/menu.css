@@ -1,3 +1,13 @@
+/* hacky styles */
+
+
+.list-left {
+    position: absolute !important;
+    top: 0 !important;
+    left: 100% !important; /* this line of code will sort things out for you :) */
+    z-index : 10;
+}
+
 /* -------------------------------- 
 
 Main Components 
@@ -157,7 +167,15 @@ header::before {
 }
 /* FIXME fancy nav trigger on mobile */ 
 .cd-nav-trigger {
-display: none;
+  display: none;
+}
+
+#main-name {
+  position: fixed;
+  z-index: 1;
+  top:  0;
+  left: 1%;
+  color: white !important;
 }
 
 .cd-main-nav {

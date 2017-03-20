@@ -104,12 +104,13 @@ img {
     width: 100% !important; 
 }
 
-/* FIXME tukushi font doesn't work */
+/* FIXME tukushi font doesn't work 
 .logo-type {
     color: #ffffff;
     text-align: center !important;
     font-family: 'Tukushi', "Source Sans Pro";
 }
+*/
 
 /* -------------------------------- 
 
@@ -131,9 +132,10 @@ header {
   text-align: center;
   background: #ffffff;
 }
+/* DEBUG */
 header h1 {
   font-size: 2.2rem;
-  color: #363558;
+  /* color: #363558; */
 }
 @media only screen and (min-width: 600px) {
   header {
