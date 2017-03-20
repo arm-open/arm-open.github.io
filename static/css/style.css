@@ -600,6 +600,10 @@ folding panel
   padding: 4em 2em;
 }
 
+.fold-section-padding h2 {
+  color: #00a850;
+}
+
 .cd-fold-content > * {
   opacity: 0;
   -webkit-transform: translateY(20px);
