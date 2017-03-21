@@ -163,6 +163,7 @@ header::before {
   -o-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotate(45deg);
 }
+
 /* FIXME fancy nav trigger on mobile */ 
 .cd-nav-trigger {
   display: none;
