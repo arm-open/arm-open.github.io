@@ -1,11 +1,9 @@
 /* hacky styles */
 
 
-.list-left {
-    position: absolute !important;
-    top: 0 !important;
-    left: 100% !important; /* this line of code will sort things out for you :) */
-    z-index : 10;
+.arm-nav-logo {
+    width: 100%;
+    height: 100%;
 }
 
 /* -------------------------------- 
@@ -170,7 +168,7 @@ header::before {
   display: none;
 }
 
-#main-name {
+#main-logo {
   position: fixed;
   z-index: 1;
   top:  0;
