@@ -1,10 +1,3 @@
-/* hacky styles */
-
-
-.arm-nav-logo {
-    width: 100%;
-    height: 100%;
-}
 
 /* -------------------------------- 
 
@@ -167,14 +160,6 @@ header::before {
 /* FIXME fancy nav trigger on mobile */ 
 .cd-nav-trigger {
   display: none;
-}
-
-#main-logo {
-  position: fixed;
-  z-index: 1;
-  top:  0;
-  left: 1%;
-  color: white !important;
 }
 
 .cd-main-nav {

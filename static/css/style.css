@@ -5,7 +5,6 @@
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-
 .link-button {
   display: inline-block;
   font-size: 1.2rem;
@@ -18,8 +17,12 @@
   border: 1px solid #00a850;
 }
 
-
-
+/* styles for the ARM logo in the top left */ 
+#main-logo {
+  position: fixed;
+  top:  0;
+  left: 1%;
+}
 
 /* -------------------------------- 
 Primary styles
@@ -66,19 +69,14 @@ h2 {
 
 h3 {
   font-family: "Overlook", serif;
-  font-weight: 2em;
+  font-style: italic;
+  font-size: 2.35rem;
 }
 
 h4 {
   font-family: "Signika", serif;
   font-weight: 1em;
 }
-
-/*
-h1, h2 {
-  font-family: "Vollkorn", serif;
-}
-*/
 
 img {
     max-width:100%;
@@ -88,13 +86,13 @@ img {
 /* extra styles for small changes */
 
 #item-1 {
-    background-image: url("../img/Homepage_Our_Mission.jpg");
-    background-size: 50% 50%;
+    background-image: url("../img/homepage_our_mission.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #item-4 {
-    background-image: url("../img/Homepage_Our_Partners.jpg");
+    background-image: url("../img/homepage_our_partners.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
