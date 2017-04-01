@@ -72,15 +72,6 @@ header::before {
   max-width: 100%;
 }
 
-/*
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    position: absolute;
-    z-index: 2;
-    margin-left: 5%;
-  }
-}
-*/
 
 .cd-logo {
  position: absolute;
@@ -366,8 +357,9 @@ header::before {
   .cd-main-nav li ul {
     height: 80px;
     background-color: #ea6b25;
-    /* padding left = logo size + logo left position*/
-    padding: 0 5% 0 calc(5% + 124px);
+    /* padding left = logo size + logo left position
+    padding: 0 5% 0 calc(5% + 124px); 
+    */ 
     -webkit-transform: translateY(-80px);
     -moz-transform: translateY(-80px);
     -ms-transform: translateY(-80px);
