@@ -31,3 +31,8 @@ install: "pip install -r test/spellcheck/requirements.txt"
 
 # defaults to current directory
 script: python test/spellcheck/spelltest.py
+
+# environment variables 
+env:
+- STRIPE_KEY="SAMPLESTRIPEKEY"
+- SH=bash
