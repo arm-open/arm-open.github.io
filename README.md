@@ -1,28 +1,40 @@
 # arm-open.github.io
-The public website for ARM.
+This is the public website for Archangel Raphael's Mission, open sourced in the spirit of transparency as a charitable organization in support of the FOSS community.
+
+We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for anyone interested in contributing which is very similar to the Apache Foundations CLA, and are happy to give credit all contributors. 
+
+
+<!-- TODO add table of contents -->
+
+## Requirements
+- Python 2.6 +
+- Flask
+
+## Usage
+
+Make sure to export a sample `STRIPE_KEY` environment variable. 
+```
+export STRIPE_KEY="SAMPLESTRIPEKEY"
+```
+
+Then you can simply run the server and navigate to http://localhost:5000
+
+
+```
+python server.py
+```
 
 
 ## Style Guides
-
-Typefaces:
- 
-
-Brand colors:
--
-- 
-
+We follow the [pep8 python specification](https://www.python.org/dev/peps/pep-0008/). 
 
 
 ### License
 This project uses the GNU GPL v3 license.
 
 ### Credits
-This starting template is the Codyhouse 3D folding panel. 
+This starting template is the Codyhouse 3D folding panel.
 
-Articles on CodyHouse [here](http://codyhouse.co/?p=683) and [here](https://codyhouse.co/gem/3d-folding-panel/)
-Terms (http://codyhouse.co/terms/)
-
-Uses SASS and Bourbon (http://bourbon.io/) for our resources. If you don't use SASS, just use the .css files that you find in the css folder. You can delete both sass and partials folders.
-
-
-We have integrated Eric Meyer’s CSS reset rules (http://meyerweb.com/eric/tools/css/reset/) and Modernizr (http://modernizr.com/).
+Articles on CodyHouse 
+- [here](http://codyhouse.co/?p=683) 
+- [here](https://codyhouse.co/gem/3d-folding-panel/)
