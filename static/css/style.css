@@ -24,6 +24,12 @@
   left: 1%;
 }
 
+@media only screen and (max-width: 510px){
+  #main-logo
+  {
+    max-width:60%;
+  }
+}
 
 
 .icon-list {
