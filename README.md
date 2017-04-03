@@ -10,7 +10,17 @@ This is the public website for Archangel Raphael's Mission, open sourced in the 
 
 ## Usage
 
+Make sure to export a sample `STRIPE_KEY` environment variable. 
+```
+export STRIPE_KEY="SAMPLESTRIPEKEY"
+```
 
+Then you can simply run the server and navigate to http://localhost:5000
+
+
+```
+python server.py
+```
 
 
 ## Style Guides
