@@ -17,7 +17,7 @@
   border: 1px solid #00a850;
 }
 
-/* styles for the ARM logo in the top left */ 
+/* styles for the ARM logo in the top left */
 #main-logo {
   position: fixed;
   top:  0;
@@ -29,22 +29,30 @@
   {
     max-width:60%;
   }
+
+  .arm-nav-logo
+  {
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
 }
 
 
 .icon-list {
-    width:    100%; 
+    width:    100%;
     position: fixed !important;
 }
 
 .icon-list li {
-    top:  0 !important; 
+    top:  0 !important;
     float: left !important;
 }
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 Primary styles
 -------------------------------- */
 
@@ -126,11 +134,11 @@ img {
 }
 
 .our-mission-header-img {
-    max-width: 100%; 
-    width: 100% !important; 
+    max-width: 100%;
+    width: 100% !important;
 }
 
-/* FIXME tukushi font doesn't work 
+/* FIXME tukushi font doesn't work
 .logo-type {
     color: #ffffff;
     text-align: center !important;
@@ -138,7 +146,7 @@ img {
 }
 */
 
-/* -------------------------------- 
+/* --------------------------------
 
 Patterns - reusable parts of our design
 
@@ -147,7 +155,7 @@ Patterns - reusable parts of our design
   overflow: hidden;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Header
 
@@ -173,7 +181,7 @@ header h1 {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Main content
 
@@ -401,7 +409,7 @@ Main content
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 folding panel
 
@@ -706,7 +714,7 @@ folding panel
   .cd-fold-content {
    /* padding: 4em; */
   }
-  
+
   .fold-section-padding {
     padding: 4em;
   }
@@ -726,7 +734,7 @@ folding panel
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Javascript disabled
 
