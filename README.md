@@ -1,6 +1,8 @@
 # arm-open.github.io
 This is the public website for Archangel Raphael's Mission, open sourced in the spirit of transparency as a charitable organization in support of the FOSS community.
 
+We have a small CLA for anyone interested in contributing which is very similar to the Apache Foundations CLA, and are happy to give credit all contributors noted in the CONTRIBUTORS file in this repository. 
+
 
 <!-- TODO add table of contents -->
 
