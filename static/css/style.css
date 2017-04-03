@@ -5,7 +5,6 @@
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-
 .link-button {
   display: inline-block;
   font-size: 1.2rem;
@@ -18,6 +17,30 @@
   border: 1px solid #00a850;
 }
 
+/* styles for the ARM logo in the top left */ 
+#main-logo {
+  position: fixed;
+  top:  0;
+  left: 1%;
+}
+
+@media only screen and (max-width: 510px){
+  #main-logo
+  {
+    max-width:60%;
+  }
+}
+
+
+.icon-list {
+    width:    100%; 
+    position: fixed !important;
+}
+
+.icon-list li {
+    top:  0 !important; 
+    float: left !important;
+}
 
 
 
@@ -62,23 +85,26 @@ h1 {
 h2 {
   font-family: "Signika", serif;
   font-weight: 2.35em;
+  padding-top:    10px;
+  padding-bottom: 10px;
 }
 
 h3 {
-  font-family: "Overlook", serif;
-  font-weight: 2em;
+  font-family: "Overlock", serif;
+  font-style: italic;
+  font-size: 2.35rem;
+  padding-top:    10px;
+  padding-bottom: 10px;
 }
 
 h4 {
   font-family: "Signika", serif;
   font-weight: 1em;
+  text-transform: uppercase;
+  color: #7a78ae;
+  padding-top:    10px;
+  padding-bottom: 10px;
 }
-
-/*
-h1, h2 {
-  font-family: "Vollkorn", serif;
-}
-*/
 
 img {
     max-width:100%;
@@ -88,13 +114,13 @@ img {
 /* extra styles for small changes */
 
 #item-1 {
-    background-image: url("../img/Homepage_Our_Mission.jpg");
-    background-size: 50% 50%;
+    background-image: url("../img/homepage_our_mission.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #item-4 {
-    background-image: url("../img/Homepage_Our_Partners.jpg");
+    background-image: url("../img/homepage_our_partners.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -104,12 +130,13 @@ img {
     width: 100% !important; 
 }
 
-/* FIXME tukushi font doesn't work */
+/* FIXME tukushi font doesn't work 
 .logo-type {
     color: #ffffff;
     text-align: center !important;
     font-family: 'Tukushi', "Source Sans Pro";
 }
+*/
 
 /* -------------------------------- 
 
@@ -131,9 +158,10 @@ header {
   text-align: center;
   background: #ffffff;
 }
+/* DEBUG */
 header h1 {
   font-size: 2.2rem;
-  color: #363558;
+  /* color: #363558; */
 }
 @media only screen and (min-width: 600px) {
   header {
@@ -598,6 +626,10 @@ folding panel
 
 .fold-section-padding {
   padding: 4em 2em;
+}
+
+.fold-section-padding h2 {
+  color: #00a850;
 }
 
 .cd-fold-content > * {

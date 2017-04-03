@@ -3,6 +3,8 @@ from flask import Flask, render_template, request, url_for, send_from_directory
 import stripe
 
 stripe.api_key = os.environ['STRIPE_KEY']
+# TODO take google analytics key from env and serve in prod
+
 
 app = Flask(__name__)
 
