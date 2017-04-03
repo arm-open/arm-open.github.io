@@ -1,3 +1,4 @@
+
 /* -------------------------------- 
 
 Main Components 
@@ -38,7 +39,7 @@ header::before {
   display: none;
   content: 'mobile';
 }
-@media only screen and (min-width: 1024px) {
+
   header {
     height: 80px;
   }
@@ -52,7 +53,6 @@ header::before {
   header::before {
     content: 'desktop';
   }
-}
 
 .cd-logo {
   display: inline-block;
@@ -71,13 +71,14 @@ header::before {
   display: block;
   max-width: 100%;
 }
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    position: absolute;
-    z-index: 2;
-    margin-left: 5%;
-  }
+
+
+.cd-logo {
+ position: absolute;
+ z-index: 2;
+ margin-left: 5%;
 }
+
 
 .cd-nav-trigger {
   display: block;
@@ -155,9 +156,10 @@ header::before {
   -o-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotate(45deg);
 }
+
 /* FIXME fancy nav trigger on mobile */ 
 .cd-nav-trigger {
-display: none;
+  display: none;
 }
 
 .cd-main-nav {
@@ -276,7 +278,8 @@ display: none;
   /* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
   display: none;
 }
-@media only screen and (min-width: 1024px) {
+
+
   .cd-main-nav {
     position: static;
     visibility: visible;
@@ -354,8 +357,9 @@ display: none;
   .cd-main-nav li ul {
     height: 80px;
     background-color: #ea6b25;
-    /* padding left = logo size + logo left position*/
-    padding: 0 5% 0 calc(5% + 124px);
+    /* padding left = logo size + logo left position
+    padding: 0 5% 0 calc(5% + 124px); 
+    */ 
     -webkit-transform: translateY(-80px);
     -moz-transform: translateY(-80px);
     -ms-transform: translateY(-80px);
@@ -430,19 +434,16 @@ display: none;
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
   }
-}
+
 
 .cd-main-content::before {
   /* never visible - this is used in jQuery to check the current MQ */
   display: none;
   content: 'mobile';
 }
-@media only screen and (min-width: 1024px) {
-  .cd-main-content::before {
-    content: 'desktop';
-  }
+.cd-main-content::before {
+  content: 'desktop';
 }
-
 .cd-main-content {
   position: relative;
   z-index: 2;
@@ -460,7 +461,8 @@ display: none;
   -o-transform: translateX(-260px);
   transform: translateX(-260px);
 }
-@media only screen and (min-width: 1024px) {
+
+
   .cd-main-content {
     padding-top: 80px;
   }
@@ -471,7 +473,6 @@ display: none;
     -o-transform: translateX(0);
     transform: translateX(0);
   }
-}
 
 .no-js .cd-nav-trigger, .no-js .cd-subnav-trigger {
   display: none;
@@ -507,7 +508,8 @@ display: none;
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-@media only screen and (min-width: 1024px) {
+
+
   .no-js .cd-main-nav {
     height: 80px;
   }
@@ -526,13 +528,11 @@ display: none;
   .no-js .cd-main-nav li ul li:last-child {
     display: none;
   }
-}
 
-.no-js .cd-main-content {
-  padding-top: 0;
-}
-@media only screen and (min-width: 1024px) {
   .no-js .cd-main-content {
     padding-top: 80px;
   }
+
+.no-js .cd-main-content {
+  padding-top: 0;
 }
