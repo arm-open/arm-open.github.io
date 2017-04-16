@@ -5,6 +5,7 @@ import stripe
 # test change
 
 stripe.api_key = os.environ['STRIPE_KEY']
+GA_ID=os.environ['GA_ID']
 # TODO take google analytics key from env and serve in prod
 
 
@@ -12,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def base():
-    return render_template('index.html')
+    return render_template('index.html', GA_ID=GA_ID)
 
 
 @app.route('/<path:path>')
