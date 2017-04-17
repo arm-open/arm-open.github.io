@@ -12,9 +12,10 @@ We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for 
 
 ## Usage
 
-Make sure to export a sample `STRIPE_KEY` environment variable. 
+Make sure to export some environment variables that `server.py` will need to run. 
 ```
 export STRIPE_KEY="SAMPLESTRIPEKEY"
+export GA_ID="GARBAGE"
 ```
 
 Then you can simply run the server and navigate to http://localhost:5000
