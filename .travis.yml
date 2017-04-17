@@ -35,4 +35,4 @@ script: python test/spellcheck/spelltest.py
 # environment variables 
 env:
 - STRIPE_KEY="SAMPLESTRIPEKEY"
-- SH=bash
+- GA_ID="GARBAGE"
