@@ -2,17 +2,14 @@ import os
 from flask import Flask, render_template, request, url_for, send_from_directory
 import stripe
 
-# test change
-
 stripe.api_key = os.environ['STRIPE_KEY']
-# TODO take google analytics key from env and serve in prod
-
+GA_ID = os.environ['GA_ID']
 
 app = Flask(__name__)
 
 @app.route('/')
 def base():
-    return render_template('index.html')
+    return render_template('index.html', GA_ID=GA_ID)
 
 
 @app.route('/<path:path>')
