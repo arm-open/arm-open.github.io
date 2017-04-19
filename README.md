@@ -1,4 +1,7 @@
 # arm-open.github.io
+
+[![Build Status](https://travis-ci.org/ARM-open/arm-open.github.io.svg?branch=master)](https://travis-ci.org/ARM-open/arm-open.github.io)
+
 This is the public website for Archangel Raphael's Mission, open sourced in the spirit of transparency as a charitable organization in support of the FOSS community.
 
 We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for anyone interested in contributing which is very similar to the Apache Foundations CLA, and are happy to give credit all contributors. 
@@ -12,9 +15,10 @@ We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for 
 
 ## Usage
 
-Make sure to export a sample `STRIPE_KEY` environment variable. 
+Make sure to export some environment variables that `server.py` will need to run. 
 ```
 export STRIPE_KEY="SAMPLESTRIPEKEY"
+export GA_ID="GARBAGE"
 ```
 
 Then you can simply run the server and navigate to http://localhost:5000
