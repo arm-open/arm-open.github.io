@@ -136,6 +136,7 @@ img {
 .our-mission-header-img {
     max-width: 100%;
     width: 100% !important;
+    max-height: 50vh;
 }
 
 /* FIXME tukushi font doesn't work

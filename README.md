@@ -17,7 +17,8 @@ We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for 
 
 Make sure to export some environment variables that `server.py` will need to run. 
 ```
-export STRIPE_KEY="SAMPLESTRIPEKEY"
+export STRIPE_SECRET_KEY="your-secret-key-here"
+export STRIPE_PUBLISHABLE_KEY="your-publishable-key-here"
 export GA_ID="GARBAGE"
 ```
 
