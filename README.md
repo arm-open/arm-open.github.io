@@ -10,8 +10,9 @@ We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for 
 <!-- TODO add table of contents -->
 
 ## Requirements
-- Python 2.6 +
+- Python 3 +
 - Flask
+- Stripe
 
 ## Usage
 
@@ -41,5 +42,5 @@ This project uses the GNU GPL v3 license.
 This starting template is the Codyhouse 3D folding panel.
 
 Articles on CodyHouse 
-- [here](http://codyhouse.co/?p=683) 
+- [here](https://codyhouse.co/gem/secondary-sliding-navigation/) 
 - [here](https://codyhouse.co/gem/3d-folding-panel/)

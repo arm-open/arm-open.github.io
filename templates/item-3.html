@@ -20,6 +20,11 @@
 		<h3>There is no shortage of ways to get involved, let’s make change happen:</h3>
 
         <a href="http://bit.ly/join_us_top" target='_blank'><b class="link-button">Join Us</b></a>
+        <form id="stripe-form" action="/charge" method="POST">
+        	<input type="hidden" id="stripeToken" name="stripeToken" />
+        	<input type="hidden" id="stripeEmail" name="stripeEmail" />
+        	<a id="stripe-button"><b class="link-button">Donate</b></a>
+        </form>
 
         <h4>Field Volunteer:</h4>
 		<p>
@@ -43,6 +48,11 @@
 		</p>
 
         <a href="http://bit.ly/join_us_bottom" target='_blank'><b class="link-button">Join Us</b></a>
+        <form id="stripe-form" action="/charge" method="POST">
+        	<input type="hidden" id="stripeToken" name="stripeToken" />
+        	<input type="hidden" id="stripeEmail" name="stripeEmail" />
+        	<a id="stripe-button"><b class="link-button">Donate</b></a>
+        </form>
 
       </section>
 	</div>

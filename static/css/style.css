@@ -754,3 +754,9 @@ Javascript disabled
   -o-transform: translateY(0);
   transform: translateY(0);
 }
+
+#stripe-form {
+  display:inline-block;
+  cursor:pointer;
+  margin-left:5px;
+}
