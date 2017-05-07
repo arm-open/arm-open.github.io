@@ -90,5 +90,5 @@ def donation():
     return render_template('charge.html', amount=amount)
 
 
-app.run(debug=True, host='localhost',
-        port=int(os.getenv('PORT', 5000)))
+#app.run(debug=True, host='localhost', port=int(os.getenv('PORT', 5000)))
+app.run()
