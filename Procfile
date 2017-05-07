@@ -1,1 +1,1 @@
-web: python3.6 server.py 
+web: python server.py 
