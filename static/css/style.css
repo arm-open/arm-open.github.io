@@ -136,6 +136,7 @@ img {
 .our-mission-header-img {
     max-width: 100%;
     width: 100% !important;
+    max-height: 50vh;
 }
 
 /* FIXME tukushi font doesn't work
@@ -752,4 +753,10 @@ Javascript disabled
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
+}
+
+#stripe-form {
+  display:inline-block;
+  cursor:pointer;
+  margin-left:5px;
 }

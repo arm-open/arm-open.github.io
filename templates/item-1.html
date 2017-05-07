@@ -32,11 +32,17 @@
 		</p>
 
         <a href="http://bit.ly/join_arm_mission" target='_blank'><b class="link-button">Join Us</b></a>
+        <form id="stripe-form" action="/charge" method="POST">
+        	<input type="hidden" id="stripeToken" name="stripeToken" />
+        	<input type="hidden" id="stripeEmail" name="stripeEmail" />
+        	<a id="stripe-button"><b class="link-button">Donate</b></a>
+        </form>
 
       </section>
 	</div>
 </body>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<!--<script src="../static/js/script-button.js">-->
 </body>
 </html>
