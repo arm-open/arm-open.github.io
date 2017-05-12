@@ -87,7 +87,7 @@ def donation():
         # Something else happened, completely unrelated to Stripe
         print(e)
         pass
-    return render_template('charge.html', amount=amount)
+    return render_template('donation_successful.html', amount=amount)
 
 #app.run(debug=True, host='localhost', port=int(os.getenv('PORT', 5000)))
 app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))

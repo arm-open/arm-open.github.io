@@ -40,11 +40,7 @@ jQuery(document).ready(function($){
 	}
 
 	function toggleContent(url, bool) {
-	//$.getScript("https://checkout.stripe.com/checkout.js");
-	//$.getScript("../static/js/stripe-button.js");
 		if( bool ) {
-			console.log("opened"); //DELETE THIS LATER
-			//$.getScript("https://checkout.stripe.com/checkout.js");
 			$.getScript("../static/js/stripe-button.js");
 			/* load and show new content */
 			var foldingContent = foldingPanel.find('.cd-fold-content');
@@ -57,7 +53,6 @@ jQuery(document).ready(function($){
 				
 			});
 		} else {
-		console.log("closed"); //DELETE THIS LATER
 			/* close the folding panel */
 			var mq = viewportSize();
 			foldingPanel.removeClass('is-open');
