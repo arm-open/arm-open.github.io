@@ -89,5 +89,9 @@ def donation():
         pass
     return render_template('donation_successful.html', amount=amount)
 
-#app.run(debug=True, host='localhost', port=int(os.getenv('PORT', 5000)))
-app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))
+@app.route('/credentials/<cred_type>')
+def credential_return(cred_type):
+    if cred_type == 'publishable_key':
+        return os.environ['STRIPE_PUBLISHABLE_KEY'];
+
+app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=os.environ['DEBUG'])

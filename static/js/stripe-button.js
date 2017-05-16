@@ -4,8 +4,16 @@ $(document).ready(function(){
   {
     console.log("stripe checkout script ready");
 
+    window.key="SAMPLESTRIPEPUBLISHABLEKEY";
+
+    $.ajax({ url: '/credentials/publishable_key', async: false, success: function(data) 
+      { 
+        window.key=data;
+      } 
+    });
+
     var handler = StripeCheckout.configure({
-      key: 'pk_test_mlBqEQWc5FR1hGVCPuBH1kgy',
+      key: window.key,
       image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
       locale: 'auto',
       token: function(token) {
