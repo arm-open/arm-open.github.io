@@ -1,39 +1,22 @@
 language: python
 
-# disable the default submodule logic
-git:
-  submodules: false
-
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y enchant
-  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-  - git submodule update --init --recursive
-
-# replace the SSH URL with the public URL
-
+# setup environment variables container before building
+# before_install:
+  
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev" # 3.5 development branch
-  - "3.6"
-  - "3.6-dev" # 3.6 development branch
-  - "3.7-dev" # 3.7 development branch
-  - "nightly"
+  - "3.6.1"
+
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
-install: "pip install -r test/spellcheck/requirements.txt"
 
-# defaults to current directory
-script: python test/spellcheck/spelltest.py
 
 # environment variables 
 env:
   global:
     - STRIPE_KEY="SAMPLESTRIPEKEY"
     - GA_ID="GARBAGE"
+
+# run tests
+script: 
+  python test/*.py
