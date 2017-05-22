@@ -39,6 +39,12 @@
 
 }
 
+.arm-nav-logo {
+  margin-top: 5px;
+  margin-bottom:5px;
+  max-width: 90%;
+  max-height: 90%;
+}
 
 .icon-list {
     width:    100%;
@@ -119,19 +125,23 @@ img {
     max-height:100%;
 }
 
-/* extra styles for small changes */
+/* wallpapers for main menu  */
 
-#item-1 {
-    background-image: url("../img/homepage_our_mission.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
+#item-1,
+#item-2,
+#item-3,
 #item-4 {
-    background-image: url("../img/homepage_our_partners.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+#item-1 { background-image: url("../img/homepage_our_mission.png"); }
+
+#item-2 { background-image: url("../img/homepage_our_programs.jpg"); }
+
+#item-3 { background-image: url("../img/homepage_join_us.jpg"); }
+
+#item-4 { background-image: url("../img/homepage_our_partners.png"); }
 
 .our-mission-header-img {
     max-width: 100%;
@@ -170,7 +180,6 @@ header {
 /* DEBUG */
 header h1 {
   font-size: 2.2rem;
-  /* color: #363558; */
 }
 @media only screen and (min-width: 600px) {
   header {
@@ -304,7 +313,7 @@ Main content
 /* Styles for the windows
  */
 .cd-item:nth-of-type(1) {
-  /* background-color: #363558; */
+  background-color: #00a850;
 }
 .cd-item:nth-of-type(2) {
   background-color: #00a850;
