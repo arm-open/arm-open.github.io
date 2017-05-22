@@ -41,6 +41,7 @@ jQuery(document).ready(function($){
 
 	function toggleContent(url, bool) {
 		if( bool ) {
+			console.log("panel opened");
 			$.getScript("../static/js/stripe-button.js");
 			/* load and show new content */
 			var foldingContent = foldingPanel.find('.cd-fold-content');

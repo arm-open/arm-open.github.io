@@ -94,4 +94,4 @@ def credential_return(cred_type):
     if cred_type == 'publishable_key':
         return os.environ['STRIPE_PUBLISHABLE_KEY'];
 
-app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=os.environ['DEBUG'])
+app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=int(os.environ['DEBUG']))
