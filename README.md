@@ -1,6 +1,6 @@
 # arm-open.github.io
 
-[![Build Status](https://travis-ci.org/ARM-open/arm-open.github.io.svg?branch=master)](https://travis-ci.org/ARM-open/arm-open.github.io)
+[![Build Status](https://travis-ci.org/ARM-open/arm-open.github.io.svg?branch=master)](https://travis-ci.org/ARM-open/arm-open.github.io) [![Code Climate](https://codeclimate.com/github/ARM-open/arm-open.github.io/badges/gpa.svg)](https://codeclimate.com/github/ARM-open/arm-open.github.io)
 
 This is the public website for Archangel Raphael's Mission, open sourced in the spirit of transparency as a charitable organization in support of the FOSS community.
 
