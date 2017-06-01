@@ -6,5 +6,6 @@ COPY . /app
 WORKDIR /app
 
 RUN pip install -r /app/requirements.txt
+RUN bash setup-env.sh
 
 CMD python /app/server.py
