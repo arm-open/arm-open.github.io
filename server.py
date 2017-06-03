@@ -87,7 +87,7 @@ def donation():
         # Something else happened, completely unrelated to Stripe
         print(e)
         pass
-    return render_template('donation_successful.html', amount=amount)
+    return render_template('donation_successful.html', GA_ID = GA_ID)
 
 @app.route('/credentials/<cred_type>')
 def credential_return(cred_type):

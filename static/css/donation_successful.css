@@ -1,0 +1,72 @@
+html, body, main
+{
+	height:100%;
+	background-color: #00a850;
+}
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#page 
+{
+	/* The image used */
+	background-image: url("../img/donation_successful_background.jpg");
+
+	/* Full height */
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	margin-top: 80px;
+
+}
+#text
+{
+	display:inline-block;
+	position: absolute;
+	left:30%;
+	top:35%;
+	
+}
+
+h1
+{
+	font-size: 35px;
+	color:white;
+	margin-bottom: 20px;
+}
+.link-button
+{
+	color:white;
+	border-color:white;
+	margin-bottom: 20px;
+}
+.fa
+{
+	color:white;
+}
+h4, p, h6
+{
+	color:white;
+	margin-bottom: 20px;
+} 
+#text .icon-list
+{
+	margin-bottom: 90px;
+	position: relative !important;
+	
+}
+#text .icon-list li
+{
+	margin-right:25px;
+}

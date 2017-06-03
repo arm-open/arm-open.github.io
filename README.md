@@ -13,12 +13,19 @@ We have a [small CLA](https://cla-assistant.io/ARM-open/arm-open.github.io) for 
 - Python 3 +
 - Flask
 - Stripe
+- Bower
 
 ## Usage
 
 Make sure to export some environment variables that `server.py` will need to run. 
 ```
 bash setup-env.sh
+```
+
+Make sure you install some other dependencies
+```
+pip install -r requirements.txt
+bower install
 ```
 
 Then you can simply run the server and navigate to http://localhost:5000
