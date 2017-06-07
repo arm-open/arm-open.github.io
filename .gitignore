@@ -108,3 +108,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Ming's testing
+.cert
