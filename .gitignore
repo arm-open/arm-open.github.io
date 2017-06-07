@@ -108,3 +108,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# SSL files
+certificate.crt
+key.key
+
+# Ming's testing
+setup-env-ming.sh
