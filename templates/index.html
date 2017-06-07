@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="../static/css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="../static/css/menu.css"> <!-- Resource style -->
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-	<!-- <link rel="stylesheet" href="../static/bower_components/font-awesome/css/font-awesome.min.css"> Resource style -->
+	<link rel="stylesheet" href="../static/bower_components/font-awesome/css/font-awesome.min.css"> <!-- Resource style -->
 
     <link rel="icon" type="image/x-icon" href="../static/favicon.ico"/>
 
@@ -34,41 +34,9 @@
 </head>
 <body>
 	<main class="cd-main">
-		<header>
-            <nav class="cd-main-nav-wrapper">
 
-                <ul class="cd-main-nav">
-                    <li id="main-logo">
-                        <img class="arm-nav-logo" src="../static/img/arm_banner.png" alt="Archangel Raphael's Mission">
-                    </li>
-
-                    <!-- <li><a href="#0">Blog</a></li>
-                    <li><a href="http://bit.ly/join_us_banner" target='_blank'>Join Us</a>
-                    <li><a href="stripe donate!">Donate</a>
-                    -->
-
-                    <li>
-                        <!-- Connect button -->
-                        <a href="#0" class="cd-subnav-trigger"><span>Connect</span></a>
-
-                        <ul class="icon-list">
-                          <li class="go-back"><a href="#0">Menu</a></li>
-
-                          <li><a href="https://www.facebook.com/armnewbrunswick/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                          <li><a href="https://twitter.com/armnewbrunswick" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.instagram.com/armnewbrunswick/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-
-                          <li><a href="https://www.snapchat.com/add/ARMNewBrunswick" target="_blank"><i class="fa fa-snapchat fa-2x" aria-hidden="true"></i></a></li>
-
-                          <li><a href="mailto:info@armnewbrunswick.org?Subject=How%20Can%20I%20Help?" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
-
-                        </ul>
-                    </li>
-                </ul> <!-- .cd-main-nav -->
-            </nav> <!-- .cd-main-nav-wrapper -->
-
-            <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
-		</header>
+		<!-- Header -->
+		{% include 'header.html' %}
 
         <!-- SEO data -->
 		<section style="display:none" itemscope itemtype="http://schema.org/Organization">
@@ -142,7 +110,7 @@
 
 
 <script src="../static/js/modernizr.js"></script> <!-- Modernizr -->
-<script src="../static/js/jquery-2.1.1.js"></script>
+<script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../static/js/main.js"></script>
 <script src="../static/js/menu.js"></script>
 

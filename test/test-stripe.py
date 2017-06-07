@@ -1,5 +1,6 @@
-import stripe
-stripe.api_key = 'secret_key': os.environ['STRIPE_SECRET_KEY'];
+import os, stripe
+
+stripe.api_key = os.environ['STRIPE_SECRET_KEY'];
 stripe.api_base = "https://api-tls12.stripe.com"
 
 if stripe.VERSION in ("1.13.0", "1.14.0", "1.14.1", "1.15.1", "1.16.0", "1.17.0", "1.18.0", "1.19.0"):

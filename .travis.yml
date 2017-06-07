@@ -14,7 +14,7 @@ install: "pip install -r requirements.txt"
 # environment variables 
 env:
   global:
-    - STRIPE_KEY="SAMPLESTRIPEKEY"
+    - STRIPE_SECRET_KEY="SAMPLESTRIPEKEY"
     - GA_ID="GARBAGE"
 
 # run tests
