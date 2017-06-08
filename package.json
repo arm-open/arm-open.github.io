@@ -1,7 +1,7 @@
 {
   "name": "arm-open.github.io",
   "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/ARM-open/arm-open.github.io.svg?branch=master)](https://travis-ci.org/ARM-open/arm-open.github.io) [![Code Climate](https://codeclimate.com/github/ARM-open/arm-open.github.io/badges/gpa.svg)](https://codeclimate.com/github/ARM-open/arm-open.github.io)",
+  "description": "The repository for the public facing website of ARM new brunswick",
   "main": "index.js",
   "directories": {
     "test": "test"
