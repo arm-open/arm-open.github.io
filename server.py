@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, request, url_for, send_from_directory
 import stripe
+import ssl
 
 stripe_keys = {
   'secret_key': os.environ['STRIPE_SECRET_KEY'],
@@ -9,6 +10,8 @@ stripe_keys = {
 stripe.api_key = stripe_keys['secret_key']
 
 GA_ID = os.environ['GA_ID']
+
+context = (os.environ['SSL_CERTIFICATE'], os.environ['SSL_KEY'])
 
 app = Flask(__name__)
 
@@ -94,4 +97,4 @@ def credential_return(cred_type):
     if cred_type == 'publishable_key':
         return os.environ['STRIPE_PUBLISHABLE_KEY'];
 
-app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=int(os.environ['DEBUG']))
+app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=int(os.environ['DEBUG']), ssl_context=context)
