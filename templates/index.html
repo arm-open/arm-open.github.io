@@ -31,12 +31,19 @@
     </script>
 
 	<title>ARM | Archangel Raphael's mission </title>
+
+	<script>
+		console.log("index head loaded");
+	</script>
+	<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+  <script> window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } </script>
 </head>
 <body>
 	<main class="cd-main">
 
 		<!-- Header -->
 		{% include 'header.html' %}
+		<a href="https://donorbox.org/arm-new-brunswick" class="custom-dbox-popup">Donate Now</a>
 
         <!-- SEO data -->
 		<section style="display:none" itemscope itemtype="http://schema.org/Organization">
@@ -113,6 +120,9 @@
 <script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../static/js/main.js"></script>
 <script src="../static/js/menu.js"></script>
+	<script>
+		console.log("index end of body loaded");
+	</script>
 
 </body>
 </html>
