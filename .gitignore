@@ -1,6 +1,7 @@
-# miscellaneous files 
+# miscellaneous files
 static/bower_components
 .DS_Store
+.venv
 .ipynb_checkpoints
 node_modules
 /.bazelrc
