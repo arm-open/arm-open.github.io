@@ -1,4 +1,5 @@
 # miscellaneous files
+yarn.lock
 static/bower_components
 .DS_Store
 .venv
