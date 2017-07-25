@@ -20,6 +20,7 @@ node_modules
 __pycache__
 *.swp
 .vscode/
+.sass-cache
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
