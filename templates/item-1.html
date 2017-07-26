@@ -9,6 +9,9 @@
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 	<title>ARM | Archangel Raphael's mission </title>
+		<script>
+		console.log("item-1 head loaded");
+	</script>
 </head>
 <body>
 
@@ -22,33 +25,30 @@
 		<h2>Our Mission</h2>
 		<h4>What we do, and why we do it.</h4>
 
-		<p>
-      ARM’s mission is to mobilize our community to serve  those in need.
+		<p> ARM’s mission is to mobilize communities to create sustainable pathways to empowerment through localized, outcome driven initiatives.
 		</p>
 
-		<p>
-      That means that we work hard to take things we are lucky to enjoy; delicious restaurants, great coffee, etc and find a way to offer those things that make our community special to the least served among us.
+		<p> What does that mean? It means we do our best to provide social programs to aid and empower the poor/working class of our community.
 		</p>
 
-		<p>
-      We believe that fostering a shared sense of community while offering social services is the perfect combination for a stronger community, happier citizens, and more meaningful outreach.
-		</p>
-
-		<p>
-      #JointheARMy or Donate today to help make a difference!
+		<p> We are professionals, students, millennials, baby boomers, Muslims, Christians, graphic designers, pharmacists, immigrants, children, Egyptians, and Puerto Ricans.
 		</p>
 
         <a href="http://bit.ly/join_arm_mission" target='_blank'><b class="link-button">Join Us</b></a>
         <form id="stripe-form" action="/charge" method="POST">
         	<input type="hidden" id="stripeToken" name="stripeToken" />
         	<input type="hidden" id="stripeEmail" name="stripeEmail" />
-        	<a id="stripe-button"><b class="link-button">Donate</b></a>
+        	<a id="stripe-button" class="custom-dbox-popup"><b class="link-button">Donate</b></a>
         </form>
 
       </section>
 	</div>
+		<script>
+		console.log("item-1 end of body loaded");
+	</script>
 </body>
 <script src="../static/bower_components/jquery/dist/jquery.min.js"></script> <!-- Resource jQuery -->
 <script src="js/main.js"></script>
+
 </body>
 </html>

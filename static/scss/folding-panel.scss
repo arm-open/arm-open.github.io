@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import '../bourbon/bourbon'; // http://bourbon.io/
 
 @import '../partials/variables'; // colors, fonts etc...
 
@@ -6,11 +6,10 @@
 
 @import '../partials/layout'; // responsive grid and media queries
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
--------------------------------- */
 
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -19,6 +18,7 @@ Primary style
 html {
 	font-size: 62.5%;
 }
+-------------------------------- */
 
 body {
 	font: {
@@ -38,7 +38,7 @@ h1, h2 {
 	font-family: $secondary-font;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Patterns - reusable parts of our design
 
@@ -48,11 +48,10 @@ Patterns - reusable parts of our design
 	overflow: hidden;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Header
 
--------------------------------- */
 
 header {
 	height: 170px;
@@ -74,8 +73,9 @@ header {
 		}
 	}
 }
+-------------------------------- */
 
-/* -------------------------------- 
+/* --------------------------------
 
 Main content
 
@@ -85,15 +85,15 @@ Main content
 	overflow-x: hidden;
 
 	&::before {
-		/* never visible - this is used in jQuery to check the current MQ */ 
+		/* never visible - this is used in jQuery to check the current MQ */
 		display: none;
 		content: 'mobile';
-	} 
+	}
 
 	> * {
 		@include transition(transform $fold-animation $fold-content-animation);
 	}
-	
+
 	&.fold-is-open > * {
 		/* on mobile - translate .cd-main content to the right when the .cd-folding-panel is open */
 		@include transform(translateX(100%));
@@ -110,7 +110,7 @@ Main content
 	@include MQ(L) {
 
 		&::before {
-			/* never visible - this is used in jQuery to check the current MQ */ 
+			/* never visible - this is used in jQuery to check the current MQ */
 			content: 'desktop';
 		}
 
@@ -213,13 +213,13 @@ Main content
 			size: 1.2rem;
 			weight: bold;
 		}
-		text-transform: uppercase; 
+		text-transform: uppercase;
 		letter-spacing: 1px;
 		padding: 1em 1.3em;
 		border-radius: 50em;
 		border: 1px solid $color-6;
 	}
-	
+
 	@include MQ(L) {
 		@include column(.5);
 		height: 520px;
@@ -269,7 +269,7 @@ Main content
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 folding panel
 
@@ -284,7 +284,7 @@ folding panel
 	width: 100%;
 	visibility: hidden;
 	overflow: hidden;
-	
+
 	@include transition(visibility 0s $fold-animation+$fold-content-animation);
 
 	.fold-left,
@@ -352,7 +352,7 @@ folding panel
 		opacity: 0;
 		@include transition(opacity .2s 0s);
 
-		&::after, 
+		&::after,
 		&::before {
 			/* lines of 'X' icon */
 			content: '';
@@ -361,7 +361,7 @@ folding panel
 			width: 32px;
 			left: 50%;
 	    	top: 50%;
-			background-color: $color-2;	
+			background-color: $color-2;
 			@include backface-visibility(hidden);
 			@include transition(opacity .2s);
 		}
@@ -447,7 +447,7 @@ folding panel
 		opacity: 0;
 		@include transform(translateY(20px));
 	}
-	
+
 	h2 {
 		font-size: 2.4rem;
 
@@ -521,7 +521,7 @@ folding panel
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Javascript disabled
 

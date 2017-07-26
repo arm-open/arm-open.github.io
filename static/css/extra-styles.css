@@ -1,0 +1,92 @@
+/* stripe form */
+#stripe-form {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 5px; }
+
+/* I don't remember why this was added T_T */
+.fold-section-padding h2 {
+  color: #00a850; }
+
+/*
+ * Color styles for the windows
+ */
+.cd-item:nth-of-type(1) {
+  background-color: #00a850; }
+
+.cd-item:nth-of-type(2) {
+  background-color: #00a850; }
+
+.cd-item:nth-of-type(3) {
+  background-color: #7651a1; }
+
+.cd-item:nth-of-type(4) {
+  background-color: #363558; }
+
+/* wallpapers for main menu  */
+#item-1,
+#item-2,
+#item-3,
+#item-4 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+#item-1 {
+  background-image: url("../img/homepage_our_mission.png"); }
+
+#item-2 {
+  background-image: url("../img/homepage_our_programs.jpg"); }
+
+#item-3 {
+  background-image: url("../img/homepage_join_us.jpg"); }
+
+#item-4 {
+  background-image: url("../img/homepage_our_partners.png"); }
+
+.our-mission-header-img {
+  max-width: 100%;
+  width: 100% !important;
+  max-height: 60vh; }
+
+/* styles for the ARM logo in the top left */
+#main-logo {
+  position: fixed;
+  top: 0;
+  left: 1%; }
+
+.arm-nav-logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 90%;
+  max-height: 90%; }
+
+@media only screen and (max-width: 510px) {
+  #main-logo {
+    max-width: 60%;
+    max-height: 90%; }
+
+  .arm-nav-logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
+/* styles for the ARM logo in the top left */
+#main-logo {
+  position: fixed;
+  top: 0;
+  left: 1%; }
+
+.arm-nav-logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 90%;
+  max-height: 90%; }
+
+.icon-list {
+  width: 100%;
+  position: fixed !important; }
+
+.icon-list li {
+  top: 0 !important;
+  float: left !important; }
+
+/*# sourceMappingURL=extra-styles.css.map */
