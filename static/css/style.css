@@ -5,6 +5,11 @@
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
+#donate-header-button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius:5em;
+}
+
 .link-button {
   display: inline-block;
   font-size: 1.2rem;
