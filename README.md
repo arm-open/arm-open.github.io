@@ -35,6 +35,15 @@ Then you can simply run the server and navigate to http://localhost:5000
 python server.py
 ```
 
+## Deploying to Heroku
+```
+you're going to want to make sure to set the buildpacks properly for heroku.
+
+We set the nodejs buildpack first to get package.json installed, then the python buildpack to run the application
+
+heroku buildpacks:set heroku/nodejs --remote YOUR_APP_NAME
+heroku buildpacks:add heroku/python --remote YOUR_APP_NAME
+```
 
 ## Style Guides
 We follow the [pep8 python specification](https://www.python.org/dev/peps/pep-0008/).
