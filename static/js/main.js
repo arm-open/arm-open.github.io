@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 var gallery = $('.cd-gallery'),
 	foldingPanel = $('.cd-folding-panel'),
 	mainContent = $('.cd-main');

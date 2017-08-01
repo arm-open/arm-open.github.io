@@ -1,3 +1,4 @@
+import $ from 'jquery';
 $.getScript("https://checkout.stripe.com/checkout.js", function()
 {
   console.log("stripe checkout script ready");

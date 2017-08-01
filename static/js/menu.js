@@ -1,3 +1,4 @@
+import $ from 'jquery';
 //move nav element position according to window width
 moveNavigation();
 $(window).on('resize', function(){
