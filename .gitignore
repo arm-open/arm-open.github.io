@@ -21,6 +21,7 @@ __pycache__
 *.swp
 .vscode/
 .sass-cache
+tags
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

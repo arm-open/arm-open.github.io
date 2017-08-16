@@ -1,23 +1,12 @@
 @import '../bourbon/bourbon'; // http://bourbon.io/
-
 @import '../partials/variables'; // colors, fonts etc...
-
 @import '../partials/mixins'; // custom mixins
-
 @import '../partials/layout'; // responsive grid and media queries
 
 /* --------------------------------
 
 Primary style
 
-
-*, *::after, *::before {
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
 -------------------------------- */
 
 body {
@@ -47,33 +36,6 @@ Patterns - reusable parts of our design
 .overflow-hidden {
 	overflow: hidden;
 }
-
-/* --------------------------------
-
-Header
-
-
-header {
-	height: 170px;
-	line-height: 170px;
-	text-align: center;
-	background: $color-6;
-
-	h1 {
-		font-size: 2.2rem;
-		color: $color-1;
-	}
-
-	@include MQ(M) {
-		height: 200px;
-		line-height: 200px;
-
-		h1 {
-			font-size: 3rem;
-		}
-	}
-}
--------------------------------- */
 
 /* --------------------------------
 
