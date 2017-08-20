@@ -1,0 +1,129 @@
+/* stripe form */
+#stripe-form {
+  display:inline-block;
+  cursor:pointer;
+  margin-left:5px;
+}
+
+/* I don't remember why this was added T_T */
+.fold-section-padding h2 {
+  color: #00a850;
+}
+
+/*
+ * Color styles for the windows
+ */
+.cd-item:nth-of-type(1) {
+  background-color: #00a850;
+}
+.cd-item:nth-of-type(2) {
+  background-color: #00B556;
+}
+.cd-item:nth-of-type(3) {
+  background-color: #9173B3;
+}
+.cd-item:nth-of-type(4) {
+  background-color: #7650A0;
+}
+
+/* wallpapers for main menu  */
+#item-1,
+#item-2,
+#item-3,
+#item-4 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#item-1 { background-image: url("../img/homepage_our_mission.png"); }
+#item-2 { background-image: url("../img/homepage_our_programs.png"); }
+#item-3 { background-image: url("../img/homepage_join_us.png"); }
+#item-4 { background-image: url("../img/homepage_our_partners.png"); }
+
+.our-mission-header-img {
+    max-width: 100%;
+    width: 100% !important;
+    max-height: 60vh;
+}
+
+.arm-nav-logo{
+    position: fixed;
+    left: 1%;
+    top: 2%;
+    max-height: 90%;
+}
+
+@media (min-width: 510px) {
+  /* styles for the ARM logo in the top left */
+  .arm-nav-logo {
+    margin-top: 5px;
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .arm-nav-logo {
+    max-width:60%;
+  }
+}
+
+/* fix for mobile menu panels */
+.cd-folding-panel.is-open {
+  z-index: 3;
+}
+
+.icon-list {
+    width:    100%;
+    position: fixed !important;
+}
+
+.icon-list li {
+    top:  0 !important;
+    float: left !important;
+}
+
+.link-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 1em 1.3em;
+  border-radius: 50em;
+  border: 1px solid #00a850;
+}
+
+p {
+  font-family: "Source Sans Pro", Georgia;
+  font-size: 12pt;
+}
+
+h1 {
+  font-family: "Signika", serif;
+  font-weight: 3em;
+}
+
+h2 {
+  font-family: "Signika", serif;
+  font-weight: 2.35em;
+  padding-top:    10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: "Overlock", serif;
+  font-style: italic;
+  font-size: 2.35rem;
+  padding-top:    10px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-family: "Signika", serif;
+  font-weight: 1em;
+  text-transform: uppercase;
+  color: #7a78ae;
+  padding-top:    10px;
+  padding-bottom: 10px;
+}

@@ -1,118 +1,93 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Request Volkorn, Open Sans, Source Sans Pro, Signika (regular and semibold), Overlock -->
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans|Signika|Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+{% include 'head.html' %}
 
-    <link href="https://fonts.googleapis.com/css?family=Overlock:400i" rel="stylesheet">
-
-
-	<link rel="stylesheet" href="../static/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="../static/css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="../static/css/menu.css"> <!-- Resource style -->
-
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
-	<link rel="stylesheet" href="../static/bower_components/font-awesome/css/font-awesome.min.css"> <!-- Resource style -->
-
-    <link rel="icon" type="image/x-icon" href="../static/favicon.ico"/>
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{GA_ID}}', 'auto');
-    ga('send', 'pageview');
-    </script>
-
-	<title>ARM | Archangel Raphael's mission </title>
-</head>
 <body>
-	<main class="cd-main">
+  <!-- menu bar -->
+  {% include 'menu-bar.html' %}
 
-		<!-- Header -->
-		{% include 'header.html' %}
+  <main class="cd-main new-header-main-content">
+  <!-- <main class="cd-main"> -->
+    <!-- cd panels -->
+    <ul class="cd-gallery">
+      <li class="cd-item" id="item-1">
+        <a href="item-1.html">
+          <div>
+            <h2>Our Mission</h2>
+            <p>What we do, and why we do it..</p>
+            <b>View More</b>
+          </div>
+        </a>
+      </li>
 
-        <!-- SEO data -->
-		<section style="display:none" itemscope itemtype="http://schema.org/Organization">
-			Hello, my name is
-			<span itemprop="legalName">ARM</span>,
-			<span itemprop="jobTitle">Charity and Comminoty Engagement</span>
-			<span itemprop="affiliation">Destination Dogs, Hidden Grounds</span>.
-			<span itemprop="additionalName">Archangel Raphael's Mission</span>.
-			<a href="http://www.armnewbrunswick.org" itemprop="url">www.armnewbrunswick.org</a>.
-			<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="addressLocality">New Brunswick</span>,
-				<span itemprop="addressRegion">New Jersey</span>.
-			</section>
-		</section>
+      <li class="cd-item" id="item-2">
+        <a href="item-2.html">
+          <div>
+            <h2>Our Programs</h2>
+            <p>Learn about what we're up to</p>
+            <b>View More</b>
+          </div>
+        </a>
+      </li>
 
-		<ul class="cd-gallery">
-			<li class="cd-item" id="item-1">
-				<a href="item-1.html">
-					<div>
-						<h2>Our Mission</h2>
-						<p>What we do, and why we do it..</p>
-						<b>View More</b>
-					</div>
-				</a>
-            </li>
-
-			<li class="cd-item" id="item-2">
-				<a href="item-2.html">
-					<div>
-						<h2>Our Programs</h2>
-						<p>Learn about what we're up to</p>
-						<b>View More</b>
-					</div>
-				</a>
-			</li>
-
-			<li class="cd-item" id="item-3">
-				<a href="item-3.html">
-					<div>
-						<h2>Join Us</h2>
+      <li class="cd-item" id="item-3">
+        <a href="item-3.html">
+          <div>
+            <h2>Join Us</h2>
             <p>There is no shortage of ways to get involved, <br>let’s make change happen.</p>
-						<b>View More</b>
-					</div>
-				</a>
-			</li>
+            <b>View More</b>
+          </div>
+        </a>
+      </li>
 
-			<li class="cd-item" id="item-4">
-				<a href="item-4.html">
-					<div>
-						<h2>Our Partners</h2>
-						<p>We're proud to feature our sponsors who support us and demonstrate a commitment to change.</p>
-						<b>View More</b>
-					</div>
-				</a>
-			</li>
-		</ul> <!-- .cd-gallery -->
-	</main> <!-- .cd-main -->
+      <li class="cd-item" id="item-4">
+        <a href="item-4.html">
+          <div>
+            <h2>Our Partners</h2>
+            <p>We're proud to feature our sponsors who support us and demonstrate a commitment to change.</p>
+            <b>View More</b>
+          </div>
+        </a>
+      </li>
+    </ul> <!-- .cd-gallery -->
+  </main> <!-- .cd-main -->
 
-	<div class="cd-folding-panel">
+  <!-- nav bar for new header menu -->
+  {% include 'nav-bar.html' %}
 
-		<div class="fold-left"></div> <!-- this is the left fold -->
+  <div class="cd-folding-panel">
+    <div class="fold-left"></div> <!-- this is the left fold -->
+    <div class="fold-right"></div> <!-- this is the right fold -->
+    <div class="cd-fold-content">
+      <!-- content loaded using javascript -->
+    </div>
 
-		<div class="fold-right"></div> <!-- this is the right fold -->
+    <a class="cd-close" href="#0"></a>
+  </div> <!-- .cd-folding-panel -->
 
-		<div class="cd-fold-content">
-			<!-- content will be loaded using javascript -->
-		</div>
-
-		<a class="cd-close" href="#0"></a>
-	</div> <!-- .cd-folding-panel -->
-
-
-<script src="../static/js/modernizr.js"></script> <!-- Modernizr -->
+<!-- TODO async js file loading could be much faster -->
+<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
 <script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../static/js/main.js"></script>
-<script src="../static/js/menu.js"></script>
+<script src="../static/js/modernizr.js"></script> <!-- Modernizr -->
 
+<script src="../static/js/folding-panels.js"></script>
+<script src="../static/js/new-header.js"></script>
+
+<script>
+  // TODO google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{GA_ID}}', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>
+  // donorbox
+  window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' }
+</script>
 </body>
 </html>
