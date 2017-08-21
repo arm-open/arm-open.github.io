@@ -1,87 +1,26 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "base.html" %}
+{% block content %}
 
-	<!-- Request Volkorn, Open Sans, Source Sans Pro, Signika (regular and semibold), Overlock -->
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans|Signika|Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
-
-	<link href="https://fonts.googleapis.com/css?family=Overlock:400i" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/donation_successful.css">
 
 
-	<link rel="stylesheet" href="../static/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="../static/css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="../static/css/menu.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="../static/css/donation_successful.css">
+<main class="cd-main new-header-main-content">
+<div id="page">
+  <div id="text">
+    <h1>Thank You!</h1>
+    <h4>YOUR SUPPORT IS APPRECIATED</h4>
+    <ul class="icon-list">
 
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <li><a href="https://www.facebook.com/armnewbrunswick/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/armnewbrunswick" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/armnewbrunswick/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.snapchat.com/add/ARMNewBrunswick" target="_blank"><i class="fa fa-snapchat fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="mailto:info@armnewbrunswick.org?Subject=How%20Can%20I%20Help?" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
 
-	<link rel="stylesheet" href="../static/bower_components/font-awesome/css/font-awesome.min.css"> <!--Resource style -->
-
-	<link rel="icon" type="image/x-icon" href="../static/favicon.ico"/>
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{GA_ID}}', 'auto');
-    ga('send', 'pageview');
-    </script>
-
-<title>ARM | Archangel Raphael's Mission </title>
-
-
-</head>
-<body>
-	<main class="cd-main">
-
-		<!-- Header -->
-		{% include 'header.html' %}
-
-        <!-- SEO data -->
-        <section style="display:none" itemscope itemtype="http://schema.org/Organization">
-        	Hello, my name is
-        	<span itemprop="legalName">ARM</span>,
-        	<span itemprop="jobTitle">Charity and Comminoty Engagement</span>
-        	<span itemprop="affiliation">Destination Dogs, Hidden Grounds</span>.
-        	<span itemprop="additionalName">Archangel Raphael's Mission</span>.
-        	<a href="http://www.armnewbrunswick.org" itemprop="url">www.armnewbrunswick.org</a>.
-        	<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        		<span itemprop="addressLocality">New Brunswick</span>,
-        		<span itemprop="addressRegion">New Jersey</span>.
-        	</section>
-        </section>
-
-        <div id="page">
-
-        	<div id="text">
-        		<h1>Thank You!</h1>
-        		<h4>YOUR SUPPORT IS APPRECIATED</h4>
-        		<ul class="icon-list">
-
-        			<li><a href="https://www.facebook.com/armnewbrunswick/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-        			<li><a href="https://twitter.com/armnewbrunswick" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-        			<li><a href="https://www.instagram.com/armnewbrunswick/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-
-        			<li><a href="https://www.snapchat.com/add/ARMNewBrunswick" target="_blank"><i class="fa fa-snapchat fa-2x" aria-hidden="true"></i></a></li>
-
-        			<li><a href="mailto:info@armnewbrunswick.org?Subject=How%20Can%20I%20Help?" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
-
-        		</ul>
-        		<h6>Wanna know what ARM is up to? Follow us!</h6>
-        		<a href="http://bit.ly/arm_donors" target='_blank'><b class="link-button">Join Us</b></a>
-        	</div>
-
-        </div>
-    </main> <!-- .cd-main -->
-
-    <script src="../static/js/modernizr.js"></script> <!-- Modernizr -->
-    <script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../static/js/main.js"></script>
-    <script src="../static/js/menu.js"></script>
-
-</body>
-</html>
+    </ul>
+    <h6>Wanna know what ARM is up to? Follow us!</h6>
+    <a href="http://bit.ly/arm_donors" target='_blank'><b class="link-button">Join Us</b></a>
+  </div>
+</div>
+</main>
+{% endblock %}

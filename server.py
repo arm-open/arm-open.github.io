@@ -37,17 +37,11 @@ def donation():
     email = request.form['stripeEmail']
 
     try:
-        customer = stripe.Customer.create(
-        email=email,
-        source=token
-    )
+        customer = stripe.Customer.create(email=email, source=token)
 
-        charge = stripe.Charge.create(
-        customer=customer.id,
-        amount=amount,
-        currency='usd',
-        description="Donation from " + email
-    )
+        charge = stripe.Charge.create(customer=customer.id,
+                                      amount=amount, currency='usd',
+                                      description="Donation from "+email)
         print("success")
         pass
     except stripe.error.CardError as e:
@@ -87,6 +81,10 @@ def donation():
         # Something else happened, completely unrelated to Stripe
         print(e)
         pass
+    return donation_page()
+
+@app.route('/donation_successful')
+def donation_page():
     return render_template('donation_successful.html', GA_ID = GA_ID)
 
 @app.route('/credentials/<cred_type>')
@@ -94,7 +92,6 @@ def credential_return(cred_type):
     if cred_type == 'publishable_key':
         return os.environ['STRIPE_PUBLISHABLE_KEY'];
 
-app.run(
-        host='0.0.0.0',
+app.run(host='0.0.0.0',
         port=int(os.getenv('PORT', 5000)),
         debug=int(os.getenv('DEBUG', 1)))
