@@ -2,27 +2,28 @@ import os
 from flask import Flask, render_template, request, url_for, send_from_directory
 import stripe
 
+GA_ID = os.environ['GA_ID']
+
 stripe_keys = {
   'secret_key': os.environ['STRIPE_SECRET_KEY'],
   'publishable_key': os.environ['STRIPE_PUBLISHABLE_KEY']
 }
 stripe.api_key = stripe_keys['secret_key']
 
-GA_ID = os.environ['GA_ID']
-
 app = Flask(__name__)
+
+# add environment variables to flask config object
+app.config.update(os.environ)
 
 @app.route('/')
 def base():
-    print(stripe_keys['secret_key'])
-    print(stripe_keys['publishable_key'])
-    return render_template('index.html', GA_ID=GA_ID)
+    return render_template('index.html')
 
 @app.route('/<path:path>')
 def send_htmls(path):
     return send_from_directory('templates', path)
 
-# TODO actual logging
+# TODO remove this as we now use donorbox.
 # Route that will process the donation
 @app.route('/charge', methods=['POST'])
 def donation():
@@ -85,7 +86,7 @@ def donation():
 
 @app.route('/donation_successful')
 def donation_page():
-    return render_template('donation_successful.html', GA_ID = GA_ID)
+    return render_template('donation_successful.html')
 
 @app.route('/credentials/<cred_type>')
 def credential_return(cred_type):
