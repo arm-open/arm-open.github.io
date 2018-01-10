@@ -23,70 +23,14 @@ def base():
 def send_htmls(path):
     return send_from_directory('templates', path)
 
-# TODO remove this as we now use donorbox.
-# Route that will process the donation
-@app.route('/charge', methods=['POST'])
-def donation():
-    print('CHARGING CARD')
-    print("----form: ")
-    print(request.form)
-    print("----")
-
-    # Amount in cents
-    amount = 100
-    token = request.form['stripeToken']
-    email = request.form['stripeEmail']
-
-    try:
-        customer = stripe.Customer.create(email=email, source=token)
-
-        charge = stripe.Charge.create(customer=customer.id,
-                                      amount=amount, currency='usd',
-                                      description="Donation from "+email)
-        print("success")
-        pass
-    except stripe.error.CardError as e:
-        # Since it's a decline, stripe.error.CardError will be caught
-        body = e.json_body
-        err  = body['error']
-
-        print("Status is: %s" % e.http_status)
-        print("Type is: %s" % err['type'])
-        print("Code is: %s" % err['code'])
-        # param is '' in this case
-        print("Param is: %s" % err['param'])
-        print("Message is: %s" % err['message'])
-    except stripe.error.InvalidRequestError as e:
-        # Invalid parameters were supplied to Stripe's API
-        print(e)
-        pass
-    except stripe.error.RateLimitError as e:
-        # Too many requests made to the API too quickly
-        print(e)
-        pass
-    except stripe.error.AuthenticationError as e:
-        # Authentication with Stripe's API failed
-        # (maybe you changed API keys recently)
-        print(e)
-        pass
-    except stripe.error.APIConnectionError as e:
-        # Network communication with Stripe failed
-        print(e)
-        pass
-    except stripe.error.StripeError as e:
-        # Display a very generic error to the user, and maybe send
-        # yourself an email
-        print(e)
-        pass
-    except Exception as e:
-        # Something else happened, completely unrelated to Stripe
-        print(e)
-        pass
-    return donation_page()
-
 @app.route('/donation_successful')
 def donation_page():
     return render_template('donation_successful.html')
+
+@app.route('/about_us')
+def about_us_page():
+    return render_template('about_us.html')
+
 
 @app.route('/credentials/<cred_type>')
 def credential_return(cred_type):
