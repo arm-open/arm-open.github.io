@@ -1,3 +1,6 @@
+# NO LONGER MAINTAINED. 
+We have a new website, visit us at [arm.gives](https://arm.gives)! 
+
 # arm-open.github.io
 
 [![Build Status](https://travis-ci.org/ARM-open/arm-open.github.io.svg?branch=master)](https://travis-ci.org/ARM-open/arm-open.github.io) [![Code Climate](https://codeclimate.com/github/ARM-open/arm-open.github.io/badges/gpa.svg)](https://codeclimate.com/github/ARM-open/arm-open.github.io)
