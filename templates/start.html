@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+{% include 'head_mine.html' %}
+
+<body>
+    <header>
+        <div class = "container">
+                <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Donate">Donate</a></li>
+                </ul> 
+        </div>
+           
+    </header>
+
+    {% block content %}
+    {# Actual content specific to each page will be rendered here in the content block #}
+    {% endblock %}
+
+    </body>
+</html>
